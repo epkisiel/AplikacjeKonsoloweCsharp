@@ -1,0 +1,51 @@
+using System;
+
+public class Zadanie
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Podaj długość tablicy: ");
+        int dlugosc=int.Parse(Console.ReadLine());
+        
+        int[] liczby=new int[dlugosc];
+
+        for(int i=0;i<dlugosc;i++){
+            Console.Write("Podaj "+(i+1)+" liczbę: ");
+            liczby[i]=int.Parse(Console.ReadLine());
+        }
+
+        int max=liczby[0];
+        int maxIndex=0;
+        int min=liczby[0];
+        int minIndex=0;
+        for(int i=0;i<dlugosc;i++){
+            if(max<liczby[i]){
+                max=liczby[i];
+                maxIndex=i+1;
+            }
+            if(min>liczby[i]){
+                min=liczby[i];
+                minIndex=i+1;
+            }
+        }
+
+        for(int i=0; i<dlugosc-1; i++){
+            for(int j=0;j<dlugosc-1-i;j++){
+                if(liczby[j]<liczby[j+1]){
+                    int tymczasowa=liczby[j];
+                    liczby[j]=liczby[j+1];
+                    liczby[j+1]=tymczasowa;
+                }
+            }
+        }
+
+        Console.WriteLine("Najmniejsza liczba to "+min+" na pozycji "+minIndex);
+        Console.WriteLine("Największa liczba to "+max+" na pozycji "+maxIndex);
+
+        Console.WriteLine("Posortowana tablica: ");
+        foreach(int liczba in liczby){
+            Console.Write(liczba+" ");
+        }
+
+    }
+}

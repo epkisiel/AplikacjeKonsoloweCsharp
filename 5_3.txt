@@ -1,0 +1,35 @@
+using System;
+
+public class ZgadnijLiczbe
+{
+    public static void Main(string[] args)
+    {
+        int sekret=42;
+        int proba;
+        int liczbaProb=7;
+        
+        Console.WriteLine("Witaj w grze zgadnij liczbę.");
+        Console.WriteLine("Komputer wybrał liczbę od 1 do 100. Masz 7 prób.");
+
+        do{
+            Console.Write("Podaj swoją liczbę: ");
+            proba=int.Parse(Console.ReadLine());
+            liczbaProb--;
+
+            if(proba<sekret){
+                Console.WriteLine("Za mało. Spróbuj większej liczby.");
+                Console.WriteLine("Pozostało "+liczbaProb+" prób.");
+            }
+            else if(proba>sekret){
+                Console.WriteLine("Za dużo. spróbuj mniejszej liczby.");
+                Console.WriteLine("Pozostało "+liczbaProb+" prób.");
+            }
+        }while(proba!=sekret && proba>0);
+
+        if(proba!=sekret){
+            Console.WriteLine("Przegrałeś. sekretna liczba to "+sekret+".");
+        }else{
+            Console.WriteLine($"Brawo, odgadłeś liczbę!");
+        }
+    }
+}

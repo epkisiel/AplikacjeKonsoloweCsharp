@@ -1,0 +1,26 @@
+using System;
+
+public class Zadanie
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Podaj liczbę całkowitą: ");
+        string podanaLiczba=Console.ReadLine();
+        int liczba;
+        while(!int.TryParse(podanaLiczba, out liczba)){
+            Console.Write("Podano nieprawidłową wartość. Podaj jeszcze raz: ");
+            podanaLiczba=Console.ReadLine();
+        }
+
+        if(liczba>=1 && liczba<=100){
+            if(liczba%2==0){
+                Console.WriteLine("Podana liczba jest parzysta.");
+            }else{
+                Console.WriteLine("Podana liczba jest nieparzysta.");
+            }
+        }
+        else{
+            Console.WriteLine("Podana liczba jest poza przedziałem (1-100).");
+        }
+    }
+}
