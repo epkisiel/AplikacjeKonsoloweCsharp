@@ -1,0 +1,9 @@
+pytanie 1: operator = przypisuje wartość do zmiennej, a operator == porównuje obie wartości
+
+pytanie 2: zwróci wynik 2; operator % zwraca resztę z dzielenia
+
+pytanie 3: warunek połączony operatorem && jest prawdziwy gdy oba warunki są prawdziwe, a warunek połączony operatorem || jest prawdziwy gdy co najmniej jeden warunek jest prawdziwy
+
+pytanie 4: break w instrukcji switch kończy dany przypadek i przerywa dalsze sprawdzanie; jego pominięcie spowoduje błąd w kompilacji
+
+pytanie 5: true lub false (prawda lub fałsz)
