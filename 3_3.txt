@@ -1,0 +1,28 @@
+using System;
+
+public class Zadanie
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Podaj liczbę punktów uzyskanych na egzaminie: ");
+        string podanaLiczba=Console.ReadLine();
+        int liczba;
+        while(!int.TryParse(podanaLiczba, out liczba) || liczba<0 ||liczba>100){
+            Console.Write("Podano nieprawidłową wartość. Podaj jeszcze raz: ");
+            podanaLiczba=Console.ReadLine();
+        }
+        
+        if(liczba>89){
+            Console.WriteLine("Ocena: bardzo dobra");
+        }
+        else if(liczba>74){
+            Console.WriteLine("Ocena: dobra");
+        }
+        else if(liczba>49){
+            Console.WriteLine("Ocena: dostateczna");
+        }
+        else{
+            Console.WriteLine("Ocena: niedostateczna");
+        }
+    }
+}

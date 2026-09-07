@@ -1,0 +1,19 @@
+using System;
+
+public class TabliczkaMnozenia
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Podaj liczbę całkowitą: ");
+        string podanaLiczba=Console.ReadLine();
+        int liczba;
+        while(!int.TryParse(podanaLiczba, out liczba)){
+            Console.Write("Podano nieprawidłową wartość. Podaj jeszcze raz: ");
+            podanaLiczba=Console.ReadLine();
+        }
+
+        for(int i=1; i<=10;i++){
+            Console.WriteLine(liczba+" * "+i+" = "+(liczba*i));
+        }
+    }
+}

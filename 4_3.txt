@@ -1,0 +1,24 @@
+using System;
+
+public class Zadanie
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Podaj liczbę całkowitą: ");
+        string podanen=Console.ReadLine();
+        int n;
+        while(!int.TryParse(podanen, out n) || n<0){
+            Console.Write("Podano nieprawidłową wartość. Podaj jeszcze raz: ");
+            podanen=Console.ReadLine();
+        }
+
+        int suma=0;
+        for(int i=1; i<=n; i++){
+            if(i%2==0){
+                suma=suma+i;
+            }
+        }
+
+        Console.WriteLine("Suma liczb parzystych od 1 do "+n+" wynosi: "+suma);
+    }
+}
