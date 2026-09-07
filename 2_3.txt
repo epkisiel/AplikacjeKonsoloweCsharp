@@ -1,0 +1,36 @@
+using System;
+
+public class Zadanie
+{
+    public static void Main(string[] args)
+    {
+        double ocena1;
+        double ocena2;
+        double ocena3;
+        
+        Console.Write("Podaj pierwszą ocenę: ");
+        string pierwsza=Console.ReadLine();
+        while(!double.TryParse(pierwsza, out ocena1)){
+            Console.Write("Podano nieprawidłową wartość. Podaj jeszcze raz: ");
+            pierwsza=Console.ReadLine();
+        }
+        
+        Console.Write("Podaj drugą ocenę: ");
+        string druga=Console.ReadLine();
+        while(!double.TryParse(druga, out ocena2)){
+            Console.Write("Podano nieprawidłową wartość. Podaj jeszcze raz: ");
+            druga=Console.ReadLine();
+        }
+        
+        Console.Write("Podaj trzecią ocenę: ");
+        string trzecia=Console.ReadLine();
+        while(!double.TryParse(trzecia, out ocena3)){
+            Console.Write("Podano nieprawidłową wartość. Podaj jeszcze raz: ");
+            trzecia=Console.ReadLine();
+        }
+        
+        double srednia=(ocena1+ocena2+ocena3)/3;
+
+        Console.WriteLine($"Średnia ocen wynosi: {srednia}.");
+    }
+}

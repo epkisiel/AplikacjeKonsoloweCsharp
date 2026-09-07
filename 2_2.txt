@@ -1,0 +1,16 @@
+using System;
+
+public class Zadanie
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Podaj swoje imię: ");
+        string imie=Console.ReadLine();
+        Console.Write("Podaj swój rok urodzenia: ");
+        string rokUrodzenia=Console.ReadLine();
+        int rok=int.Parse(rokUrodzenia);
+        int wiek=2026-rok;
+
+        Console.WriteLine($"Twoje imię to {imie}, a twój wiek to {wiek}.");
+    }
+}

@@ -1,0 +1,22 @@
+using System;
+
+public class Zadanie
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Podaj liczbę: ");
+        string podanaLiczba=Console.ReadLine();
+        int liczba;
+        while(!int.TryParse(podanaLiczba, out liczba)){
+            Console.Write("Podano nieprawidłową wartość. Podaj jeszcze raz: ");
+            podanaLiczba=Console.ReadLine();
+        }
+        
+        if(liczba%2==0){
+            Console.WriteLine("Liczba "+liczba+" jest parzysta.");
+        }
+        else{
+            Console.WriteLine("Liczba "+liczba+" jest nieparzysta.");
+        }
+    }
+}

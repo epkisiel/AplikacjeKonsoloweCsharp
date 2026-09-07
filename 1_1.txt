@@ -1,0 +1,10 @@
+pytanie 1: metoda, od której program rozpoczyna swoje działanie
+
+pytanie 2: Console.WriteLine - wypisuje podany tekst i przechodzi do nowej linii;
+Console.Write - wypisuje podany tekst, ale nie przechodzi do nowej linii
+
+pytanie 3: Console.ReadLine zwraca łańcuch znaków
+
+pytanie 4: kompilacja to tłumaczenie naszego kody na język zrozumiały dla komputera, jest potrzebna byśmy mogli łatwiej porozumiewać się z komputerem
+
+pytanie 5: ;
