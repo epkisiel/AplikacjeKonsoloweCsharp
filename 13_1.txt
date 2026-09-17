@@ -1,0 +1,12 @@
+pytanie 1: wyjątek pojawia się w trakcie działania programu, gdy wystąpi nieprawidłowa sytuacja, która uniemożliwia poprawne wykonanie instrukcji; gdy wyjątek nie zostanie obsłużony, program zatrzymuje swoje działanie
+
+pytanie 2:
+try - zawiera instrukcje, które mogą zgłosić wyjątek
+catch - zawiera kod uruchamiany w razie wystąpienia wyjątku
+finally - instrukcje w tym bloku zostaną wykonane niezależnie od tego czy w bloku try wystąpił wyjątek czy nie
+
+pytanie 3: int.TryParse zamiast zgłaszać wyjątek przy błędzie tak jak int.Parse, zwraca wartość logiczną informującą, czy konwersja się powiodła; int.TryParse jest korzystniejszy gdy nie mamy pewności, że konwersja wartości powiedzie się pomyślnie
+
+pytanie 4:
+DivideByZeroException - pojawia się przy dzieleniu liczby przez zero
+IndexOutOfRangeException - pojawia się przy odwołaniu do nieistniejącego indeksu tablicy

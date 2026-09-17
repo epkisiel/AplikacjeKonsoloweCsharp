@@ -1,0 +1,9 @@
+pytanie 1: indeks pierwszego elementu to 0; indeks ostatniego elementu to 7
+
+pytanie 2: ta pierwsza tylko deklaruje tablicę, a ta druga deklaruje tablicę i  od razu przypisuje do niej wartości
+
+pytanie 3: ponieważ ostatni indeks tablicy jest mniejszy od jej długości, więc wystąpiłby błąd 
+
+pytanie 4: zwraca długość tablicy; zwraca wartość typu int
+
+pytanie 5: ponieważ mamy wyznaczyć maksymalną wartość w tablicy, a zero mogłoby wtedy okazać się największą wartością, mimo że w tablicy takiej wartości nie ma

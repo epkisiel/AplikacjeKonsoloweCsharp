@@ -1,0 +1,7 @@
+pytanie 1: nazwę funkcji, opis funkcji, parametry, zwracaną wartość, autora
+
+pytanie 2: by łatwiej było zrozumieć kod
+
+pytanie 3: zasada pojedynczej odpowiedzialności funkcji polega na tym, że funkcja powinna realizować jedną, jasno określoną czynność; podział programu na funkcje zwiększa czytelność kodu w Main
+
+pytanie 4: wypisywanie komunikatów by użytkownik wiedział co program robi i czytelne komunikowanie się z użytkownikiem kiedy musi wprowadzić jakieś dane
